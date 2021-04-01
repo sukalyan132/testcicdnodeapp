@@ -9,13 +9,13 @@ const USERS_URL = process.env.USERS_URL;
 
 /************************get product by category***********************************************/
 const testfun= async(req,res) =>{
-  	res.json({"status":"success"});
+  	res.json({"status":"success","data":100});
 
 };
 /*************************************************************************** */
 const testfun2= async(req,res) =>{
 	console.log(req.params);
-	res.json({"status":req.params.id,"url":USERS_URL});
+	res.json({"status":"success","url":USERS_URL,"id":req.params.id});
 
 };
 /***********************************************************************/
